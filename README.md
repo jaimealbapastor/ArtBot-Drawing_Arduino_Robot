@@ -20,4 +20,4 @@ ArtBot est un robot destiné à l'automatisation des dessins. Il peut être util
 - Signer à distance
 - Tracer des graphiques
 
-Grâce l'utilisation de l'encre de stylo bic, le côut d'impression est significativement réduit et ainsi que sa maintenance.
+Grâce l'utilisation de l'encre de stylo bic, le côut d'impression est significativement réduit ainsi que sa maintenance.

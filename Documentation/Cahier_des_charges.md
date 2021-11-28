@@ -6,4 +6,4 @@
 
 ## Étapes
 
-    Répartition du travail: [fichier]
+[Répartition du travail](Etapes-Taches.md)
