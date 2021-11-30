@@ -29,8 +29,8 @@ Répartition des tâches dans **[WorkSpace ClickUp](https://sharing.clickup.com/
 
 - [ ] Chercher documentation
 
-  -[ ] Librairies  
-  -[ ] Organisation du code
+  - [ ] Librairies
+  - [ ] Organisation du code
 
 - [ ] Shématiser main code
   - [ ] variables
