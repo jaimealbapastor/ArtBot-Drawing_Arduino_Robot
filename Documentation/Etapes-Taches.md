@@ -2,54 +2,69 @@
 
 # Etape 1: Planification
 
-- Trouver idée de projet (done)
-- Trouver nom (done)
-- Setup du GitHub (in progress)
+- [ ] Trouver idée de projet
+- [ ] Trouver nom
+- [ ] Setup du GitHub
 
 # Etape 2: Elaboration
 
-## Partie Méchanique
+## Partie Mécanique
 
-- Choisir type de structure
-- Système pour changer les couleurs
-- Shematiser les pièces avant la modélisation
-- Modelisation des pièces
+- [ ] Choisir type de structure
+- [ ] Système pour changer les couleurs
+- [ ] Shematiser les pièces avant la modélisation
+- [ ] Modelisation des pièces
+- [ ] Assemblage et animation Onshape
 
 ## Partie Electronique
 
-- Vérifier les composants necessaires
-- Choix des moteurs
-- Demande d'achat des composants manquants
+- [ ] Shématiser le circuit
+- [ ] Vérifier les composants necessaires (et les lister dans [Matériel.md](Matériel.md))
+- [ ] Choix des moteurs
+- [ ] Demande d'achat des composants manquants
 
 ## Partie Programmation
 
-- Code pour mouvement en axes x et y
+- [ ] Shématiser main code
+  - [ ] variables
+  - [ ] principales fonctions
+  - [ ] librairies
+- [ ] Code pour mouvement en axes x et y
+
+- [ ] Code pour dessiner
+
+  - [ ] Dessiner des formes basiques
+    - [ ] Contours
+    - [ ] Remplissage
+  - [ ] Reconnaissance d'image
+    - [ ] Reconnaissance contours et couleurs
+    - [ ] Convertir image en matrice de 4 couleurs
 
 # Etape 3: Production
 
+## Partie Mécanique / Eléctronique
+
+- [ ] Produire les pièces
+- [ ] Assemblage + intégration des composants
+- [ ] Créer mallette pour faciliter le transport
+
 ## Partie Programmation
 
-- Dessiner
+- [ ] Code pour changement de couleur
 
-  - Dessiner des formes basiques
-    - Contours
-    - Remplissage
-  - Reconnaissance d'image
-    - Reconnaissance contours et couleurs
-    - Convertir image en matrice de 4 couleurs
-
-- Connexion wifi/bluetooth avec telephone/ordinateur
-- Application pour envoyer image
+- [ ] Connexion wifi/bluetooth avec telephone/ordinateur
+- [ ] Application pour envoyer image
 
 # Etape 4: Cloture du projet
 
-Correction des éventuels bugs
+- [ ] Correction des éventuels bugs
 
-## Tests de la version finale
+- [ ] Tests de la version finale
 
-- Test en noir et blanc / couleurs
-- Test document
+  - [ ] Test en noir et blanc / couleurs
+  - [ ] Test document
 
-## Rapport final
-
-- Evaluation du projet
+- [ ] Rapport final
+  - [ ] Evaluation du projet
+  - [ ] Possibles améliorations
+  - [ ] etc
