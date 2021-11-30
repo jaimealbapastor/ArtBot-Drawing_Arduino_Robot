@@ -1,10 +1,12 @@
 # ETAPES DU PROJET & REPARTITION DES TACHES
 
+Répartition des tâches dans **[WorkSpace ClickUp](https://sharing.clickup.com/l/h/4-32571374-1/226c80c2a30dcb4)**
+
 # Etape 1: Planification
 
-- [ ] Trouver idée de projet
-- [ ] Trouver nom
-- [ ] Setup du GitHub
+- [x] Trouver idée de projet
+- [x] Trouver nom
+- [x] Setup du GitHub
 
 # Etape 2: Elaboration
 
@@ -25,6 +27,11 @@
 
 ## Partie Programmation
 
+- [ ] Chercher documentation
+
+  -[ ] Librairies  
+  -[ ] Organisation du code
+
 - [ ] Shématiser main code
   - [ ] variables
   - [ ] principales fonctions
@@ -38,7 +45,7 @@
     - [ ] Remplissage
   - [ ] Reconnaissance d'image
     - [ ] Reconnaissance contours et couleurs
-    - [ ] Convertir image en matrice de 4 couleurs
+    - [ ] Convertir image en 4 couleurs
 
 # Etape 3: Production
 

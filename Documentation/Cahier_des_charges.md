@@ -31,7 +31,7 @@ Les fonctionnalité de ArtBot:
 
 ## Étapes
 
-Etapes et Repartition des Tâches **[ici](Etapes-Taches.md)**
+[Etapes](Etapes-Taches.md) et [Repartition des Tâches](https://sharing.clickup.com/l/h/4-32571374-1/226c80c2a30dcb4)
 
 ## Ressources
 
