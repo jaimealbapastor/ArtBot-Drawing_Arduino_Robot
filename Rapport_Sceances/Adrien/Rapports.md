@@ -13,8 +13,7 @@
  - les deux socles en y = max 
 
 - liste du materiel necessaire 
-
-- 
+- élaboration du system de changement de couleur 
 - 
 - 
 
