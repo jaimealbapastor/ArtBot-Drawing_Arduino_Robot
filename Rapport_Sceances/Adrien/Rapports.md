@@ -4,6 +4,7 @@
 
 ### Ce rapport correspond au travail fourni pendant la première scéance de TD.
 
+
 - shématisation des pièces et calcul de la taille de notre machine en x et y, 
 - début de la modelisation 3d de nos pièces :
  - socle en = 0
@@ -23,8 +24,10 @@
 
 
 
+
 ## Rapport de la séance 3
 ### Ce rapport correspond au travail fourni pendant la troisième scéance de TD.
+
 
 
 
@@ -55,4 +58,5 @@
 
 ## Rapport de la séance 9
 ### Ce rapport correspond au travail fourni pendant la neuvième scéance de TD.
+
 
