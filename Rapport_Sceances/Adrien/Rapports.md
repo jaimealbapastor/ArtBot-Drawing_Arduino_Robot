@@ -11,7 +11,7 @@
  - 2 pièce qui bougent sur les deux tiges des axes y 
  - les deux socles en y = max 
 
-- 
+- liste du materiel necessaire 
 
 - 
 - 
