@@ -1,7 +1,5 @@
 # Cahier des Charges - ArtBot
 
-## Inspiration
-
 ## Objectifs
 
 Notre objectif est de créer un produit qui:
@@ -34,7 +32,7 @@ Les fonctionnalité de ArtBot:
 [Etapes](Etapes-Taches.md) et [Repartition des Tâches](https://sharing.clickup.com/l/h/4-32571374-1/226c80c2a30dcb4)
 
 Le diagramme de Gantt:
-![Diagramme de Gantt](Images/Diagramme-Gantt.png)
+![Diagramme de Gantt](../Images/Diagramme-Gantt.png)
 
 ## Ressources
 

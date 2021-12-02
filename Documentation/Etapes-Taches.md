@@ -12,7 +12,7 @@ Répartition des tâches dans **[WorkSpace ClickUp](https://sharing.clickup.com/
 
 ## Partie Mécanique
 
-- [ ] Choisir type de structure
+- [x] Choisir type de structure
 - [ ] Système pour changer les couleurs
 - [ ] Shematiser les pièces avant la modélisation
 - [ ] Modelisation des pièces
@@ -21,8 +21,8 @@ Répartition des tâches dans **[WorkSpace ClickUp](https://sharing.clickup.com/
 ## Partie Electronique
 
 - [ ] Shématiser le circuit
-- [ ] Vérifier les composants necessaires (et les lister dans [Matériel.md](Matériel.md))
-- [ ] Choix des moteurs
+- [x] Vérifier les composants necessaires (et les lister dans [Matériel.md](Matériel.md))
+- [x] Choix des moteurs
 - [ ] Demande d'achat des composants manquants
 
 ## Partie Programmation
