@@ -1,4 +1,4 @@
-# **Rapports de Scéance - Jaime Alba Pastor G2**
+# **Rapports de Séance - Jaime Alba Pastor G2**
 
 # Séance 0
 
