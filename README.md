@@ -10,6 +10,7 @@ Projet réalisé dans le cadre de la formation de prépa intégrée de Polytech 
 ### Tuteurs:
 
 - **Pascal Masson**
+- **M. Jacquemod**
 
 ## Présentation
 

@@ -44,5 +44,12 @@ J'ai passé une grande partie du temps à _collecter_ les matériaux d'un projet
 - Nous avons besoin d'une courroie dentée d'environ 2m40, j'ai trouvé quelques courrois dentées (plus petites) que je vais agrafer entre elles pour faire une grande courroie.
 - Finalement j'ai aussi récupéré des roulements linéaires à billes, des tubes en fer, deux moteurs NEMA-17 step bipolaires et les drivers.
 
-Pour finir, j'ai commencé à tester le moteur NEMA-17 avec un [petit programme](../Tests/StepMotorTest1.ino) récuperé dans le superbe cours de M.Masson.
+Pour finir, j'ai commencé à tester le moteur NEMA-17.
+Ce moteur ayant 4 cables (reliés 2 à 2), j'ai utilisé une petite astuce pour recconnaitre ceux qui vont ensemble. En tournant manuellement la partie mobile du moteur, un petit champ magnétique est généré puis transformé en courant (utilisation inverse du moteur). On peut donc créer un circuit **"fermé"** avec une résistance et une led qui s'allumera que lorsqu'il y aura un courant passant. On pourra alors identifier si le circuit est réellement fermé ou pas (si la led ne s'allume pas alors le circuit n'est pas fermé).  
+[VideoYoutube](https://youtu.be/oWQ2Gkv-7zA)
+
+**Remarque de M. Jacquemod :**  
+En tournant manuellement la partie mobile du moteur on ne peut pas deviner dans quel sens le courant va passer. C'est pour ça que si le courant généré est **trop important** et dans le **sens contraire à celui que la led accepte**, alors la led pourrait griller.
+
+Puis j'ai procédé à tester le moteur (_avec la supervision de M. Jacquemod pour éviter de griller le driver_) avec un [petit programme](../Tests/StepMotorTest1.ino) récuperé dans le superbe cours de M.Masson. Le moteur a bien fonctionné.  
 ![photo](../Images/steppermotor1.jpeg)
