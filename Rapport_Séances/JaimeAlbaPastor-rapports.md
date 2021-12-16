@@ -53,3 +53,26 @@ En tournant manuellement la partie mobile du moteur on ne peut pas deviner dans 
 
 Puis j'ai procédé à tester le moteur (_avec la supervision de M. Jacquemod pour éviter de griller le driver_) avec un [petit programme](../Tests/StepMotorTest1.ino) récuperé dans le superbe cours de M.Masson. Le moteur a bien fonctionné.  
 ![photo](../Images/steppermotor1.jpeg)
+
+# Séance 2 - 16/12
+
+Cette deuxième séance a été consacrée à la recherche et compréhension des fichiers .ino et programmes en c++.
+
+Après avoir retesté le moteur pas à pas, je me suis rendu compte que l'utilisation de fonctions **delay()** dans le [programme](../Tests/StepMotorTest1.ino) sont totalement inserviables pour notre projet puisque les moteurs pas à pas doivent fonctionner indépendamment l'un de l'autre et au même temps. 
+
+1. J'ai donc eu l'idée d'écrire ma propre librairie en m'informant sur le site officiel d'Arduino: [Writing a Library for Arduino](https://www.arduino.cc/en/Hacking/LibraryTutorial). Ceci m'a permis de mieux comprendre comment le language **c++** fonctionne et comment on peut **créer des classes** (deux types de fichiers: .cpp et .h).
+
+2. Après m'être longtemps informé, une phrase m'est venue en tête: *"Tout problème qu'on puisse rencontrer a déjà été rencontré et résolu par quelqu'un d'autre"*. J'ai donc retrouvé des librairies comme **[AccelStepper](https://www.arduino.cc/reference/en/libraries/accelstepper/)** qui permettent de contrôler les moteurs pas à pas très facilement.
+
+3. Puis j'ai lu la documentation du [Stepper Speed Control](https://www.arduino.cc/en/Tutorial/LibraryExamples/StepperSpeedControl) du site officiel Arduino mais qui utilise un autre type de driver ([SN75441 0ne H-Bridge](https://www.ti.com/lit/ds/symlink/sn754410.pdf)). Puis j'ai trouvé ce [site](https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/) qui utilise notre **driver A4988** et qui explique très bien, étape par étape, comment le circuit et le programme fonctionnent.
+
+## Problème rencontré
+Pour être sûr qu'avec la librairie **AccelStepper** on pouvait contrôler deux moteurs à la fois, j'ai préféré me renseigner avant de commencer à coder. En effet, j'ai bien fait de m'inquiéter puisque d'après ces sites plusieurs personnes ont rencontré des problèmes similaires :
+- [Asynchronous stepper motor library](https://forum.dronebotworkshop.com/arduino/asynchronous-stepper-motor-library/)
+- [non-blocking motor move for arduino](https://groups.google.com/g/accelstepper/c/wusHVDxhufw?pli=1)
+- [linear motion with two steppers (AccelStepper)](https://forum.arduino.cc/t/linear-motion-with-two-steppers-accelstepper/126825)
+- [simultaneous stepper motor control using accelstepper](https://forum.arduino.cc/t/simultaneous-stepper-motor-control-using-accelstepper/625179/2)
+
+Il faudra donc que pour la troisième séance je me renseigne plus en détail sur les problèmes et solutions proposées. Et si jamais ça ne fonctionne pas, il faudra que je me penche sur ma dernière alternative, c'est-à-dire l'écriture de fonctions asynchrones et gestion des éventualités.
+
+
