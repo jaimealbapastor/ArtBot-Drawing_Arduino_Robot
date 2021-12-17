@@ -6,3 +6,5 @@
 
 [pièce qui bouge sur y](https://cad.onshape.com/documents/21a7f2e1a193b40d7dea2639/w/ac2afb2342f08798c6df94d4/e/8383617883dbb1d0f51e6f5b?renderMode=0&uiState=61bb2255dad89b0aec19620a)
 
+[debut de l'assemblage](https://cad.onshape.com/documents/21a7f2e1a193b40d7dea2639/w/ac2afb2342f08798c6df94d4/e/ba21421cad73b33d512d3d27?renderMode=0&uiState=61bced26c71ba66e82298858)
+
