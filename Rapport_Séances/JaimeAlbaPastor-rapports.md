@@ -64,7 +64,7 @@ Après avoir retesté le moteur pas à pas, je me suis rendu compte que l'utilis
 
 2. Après m'être longtemps informé, une phrase m'est venue en tête: *"Tout problème qu'on puisse rencontrer a déjà été rencontré et résolu par quelqu'un d'autre"*. J'ai donc retrouvé des librairies comme **[AccelStepper](https://www.arduino.cc/reference/en/libraries/accelstepper/)** qui permettent de contrôler les moteurs pas à pas très facilement.
 
-3. Puis j'ai lu la documentation du [Stepper Speed Control](https://www.arduino.cc/en/Tutorial/LibraryExamples/StepperSpeedControl) du site officiel Arduino mais qui utilise un autre type de driver ([SN75441 0ne H-Bridge](https://www.ti.com/lit/ds/symlink/sn754410.pdf)). Puis j'ai trouvé ce [site](https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/) qui utilise notre **driver A4988** et qui explique très bien, étape par étape, comment le circuit et le programme fonctionnent.
+3. Puis j'ai lu la documentation du [Stepper Speed Control](https://www.arduino.cc/en/Tutorial/LibraryExamples/StepperSpeedControl) du site officiel Arduino mais qui utilise un autre type de driver ([SN75441 0ne H-Bridge](https://www.ti.com/lit/ds/symlink/sn754410.pdf)). Puis j'ai trouvé ce [site](https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/) qui utilise notre **driver A4988** et qui explique très bien, étape par étape, comment le circuit et le [programme](../Tests/StepMotorPosition.ino) fonctionnent.
 
 ## Problème rencontré
 Pour être sûr qu'avec la librairie **AccelStepper** on pouvait contrôler deux moteurs à la fois, j'ai préféré me renseigner avant de commencer à coder. En effet, j'ai bien fait de m'inquiéter puisque d'après ces sites plusieurs personnes ont rencontré des problèmes similaires :
