@@ -8,8 +8,10 @@
 #include <AccelStepper.h>
 
 #define motorInterfaceType 1
+#define stepsPerRev 200
+#define cmPerRev 200
 
-StepperMotor::StepperMotor(int dirPin, int stepPin)
+Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2)
 {
     _dir = dirPin;
     _step = stepPin;
@@ -18,9 +20,12 @@ StepperMotor::StepperMotor(int dirPin, int stepPin)
     pinMode(stepPin, OUTPUT);
     
     AccelStepper _steper = AccelStepper(motorInterfaceType, _step,_dir);
+
+    // #### Pen state ####
+    _currentDirection = 0;
 }
 
-void Morse::dot()
+void Morse::forward()
 {
   digitalWrite(_pin, HIGH);
   delay(250);
