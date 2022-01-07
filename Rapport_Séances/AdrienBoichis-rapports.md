@@ -25,6 +25,8 @@ Ensuite il y a le petit socle qui va bouger en y, il y en donc deux, un de chaqu
 
 l'idee est de finir l'assemblage et de verifier que cela fonctionne sur onshape et de pouvoir fabriquer toute les pièces a la rentrée avant de construire la dernière pièce ou l'on fera surement deux exemplaires (un pour le cas ou l'on peut faire qu'une seule couleur et un dans le cas des quatre couleurs). En effet le mieux est de construire toutes les pièces et de les assembler avant de construire le dernier socle qui va contenir le stylo. 
 
+![photo](../Images/thumbnail_IMG_8754)
+
 Il y a deja le debut de l'assemblage et le but est de le finir pendant les vacances pour pouvoir construire les pièces sur la première senace de la rentrée.  
 
 
