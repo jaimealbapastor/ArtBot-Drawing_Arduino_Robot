@@ -11,32 +11,41 @@
 #define stepsPerRev 200
 #define cmPerRev 200
 
-Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2)
-{
-    _dir = dirPin;
-    _step = stepPin;
+Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2) {
+  // #### Motors ####
+  _dir1 = dirPin1;
+  _step1 = stepPin1;
+  _dir2 = dirPin2;
+  _step2 = stepPin2;
 
-    pinMode(dirPin,OUTPUT);
-    pinMode(stepPin, OUTPUT);
-    
-    AccelStepper _steper = AccelStepper(motorInterfaceType, _step,_dir);
+  pinMode(dirPin1, OUTPUT);
+  pinMode(stepPin1, OUTPUT);
+  pinMode(dirPin2, OUTPUT);
+  pinMode(stepPin2, OUTPUT);
 
-    // #### Pen state ####
-    _currentDirection = 0;
+  AccelStepper _stepper1 = AccelStepper(motorInterfaceType, _step1, _dir1);
+  AccelStepper _stepper2 = AccelStepper(motorInterfaceType, _step2, _dir2);
+
+  _stepper1.setMaxSpeed(300); // in steps per second
+  _stepper2.setMaxSpeed(300);
+
+  // #### Pen state ####
+  double _currentDirection = 0;
+  int _x = 0;
+  int _y = 0
 }
 
-void Morse::forward()
-{
-  digitalWrite(_pin, HIGH);
-  delay(250);
-  digitalWrite(_pin, LOW);
-  delay(250);  
+void Pen::moveX(int steps) {
+  _stepper1.move(steps);
+  _stepper2.move(steps);
 }
 
-void Morse::dash()
-{
-  digitalWrite(_pin, HIGH);
-  delay(1000);
-  digitalWrite(_pin, LOW);
-  delay(250);
+void Pen::moveY(int steps) {
+  _stepper1.move(steps);
+  _stepper2.move(-steps);
+}
+
+void Pen::forward(int steps) {
+  _stepper1.setCurrentPosition(0);
+  _stepper1.setCurrentPosition(0);
 }

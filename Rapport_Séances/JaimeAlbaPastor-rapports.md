@@ -76,3 +76,27 @@ Pour être sûr qu'avec la librairie **AccelStepper** on pouvait contrôler deux
 Il faudra donc que pour la troisième séance je me renseigne plus en détail sur les problèmes et solutions proposées. Et si jamais ça ne fonctionne pas, il faudra que je me penche sur ma dernière alternative, c'est-à-dire l'écriture de fonctions asynchrones et gestion des éventualités.
 
 
+# Séance 3 - 06/01/22
+
+En vue de la présentation du projet de la semaine prochaine, nous avons décidé d'accélerer la production car nous étions un peu en retard.  
+
+## Partie Programmation
+J'ai commencé par élaborer un récapitulatif du code avec les principales fonctions et variables: [Code_diagram.md](../Documentation/Code_diagram.md).  
+
+J'ai repris l'idée de la **librairie turtle de python** qui permet de dessiner facilement sur une fenêtre et dont le fonctionnement ressemble particulièrement à ce dont on a besoin: une tortue (dans notre cas le stylo) qui se déplace en traçant des lignes derrière elle.
+
+J'ai commencé à creer la [classe Pen](../Code/Pen.cpp) en utilisant la librairie *AccelStepper* pour simplifier le code. Je finirai cette partie avant la prochaine séance pour pouvoir faire des tests avec les pièces imprimées.
+
+## Partie Mécanique
+Après qu'Adrien ait terminé la modélisation des pièces, nous nous sommes dirigés vers le famlab pour la production. 
+
+Nous avons discuté avec Frédéric Juan une méthode différente pour fabriquer les pièces car elles étaient trop grandes pour l'impression 3D.  
+On a donc décidé de maintenir le support pour les moteurs et de créer une boite en bois pour ranger la plaque arduino et tous les cables. Ceci permet de maintenir le projet propre et organisé ainsi que plus élégant.  
+
+J'ai donc téléchargé le fichier .svg du générateur de boîtes **[Box.py](https://www.festi.info/boxes.py/)**, et après modification avec **Inkscape**, nous avons coupé et assemblé les pièces de la boîte:  
+![Box](../Images/Box.jpg)
+
+D'autre part, l'une des pièces est en cour d'impression (j'irai la récupérer lundi) et si tout est correct on imprimera le reste.
+
+
+

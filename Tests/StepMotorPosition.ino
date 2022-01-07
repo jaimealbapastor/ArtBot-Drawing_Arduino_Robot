@@ -16,7 +16,7 @@ void loop() {
   // Run the motor forward at 200 steps/second until the motor reaches 400 steps (2 revolutions):
   while(stepper.currentPosition() != 400)
   {
-    stepper.setSpeed(200);
+    stepper.setSpeed(200); 
     stepper.runSpeed();
   }
 
