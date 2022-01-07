@@ -36,8 +36,12 @@ Il y a deja le debut de l'assemblage et le but est de le finir pendant les vacan
 
 
 
-## Rapport de la séance 3
+## Rapport de la séance 3 (06/01/2022)
 ### Ce rapport correspond au travail fourni pendant la troisième scéance de TD.
+
+Lors de cette séance le but était de finir l'assemblage pour bien verifier que toutes nos pièces étaient fonctionelles et de verifier qu'elles s'assemblaient bien ensemble. Ceci étant terminé j'ai pu commenecer a regarder pour la création et nous avons meme pu lancer la production de notre boite qui se situera en y = 0. Celle ci contiendra notre carte arduino aisni que nos branchements et sera tres accesible pres de moteurs pour simplifier le passage des cables. Nous avons choisi de créer en prmier lieu que les pièces d'un cote avant de créer les pièces de l'autre cote pour s'assurer qu'elles fonctionnent avant de créer toutes les pièces. Nous avons donc aussi les barres en fer et nous pouront en debut de semaine prochaine les assembler et pouvoir ainsi lancer la productions des pièces de l'autre coté et je l'espere pouvoir avoir ainsi toutes nos pièces assembler sur les bords pour jeudi prochain. En effet il nous manque encore la pièce qui pourra tenir le stylo ou meme les 4 stylos. J'ai aussi commenecer à travailler sur la modelisation de notre malette qui permettera de transporter notre imprimante, j'ai pris les cotes me suis renseigne sur le meilleur moyen de proteger notre création ARTBOT pour pouvoir la transporter sans l'abimer. 
+Le prochianes étapes sont donc de finir la construction des pièces et de les assembler avant de finit l'elaboration de notre malette pour pouvoir transporter tout notre materiel jusqu'a la fin du projet. 
+
 
 
 
