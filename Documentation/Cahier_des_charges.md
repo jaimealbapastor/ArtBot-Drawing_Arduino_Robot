@@ -32,7 +32,7 @@ Les fonctionnalité de ArtBot:
 [Etapes](Etapes-Taches.md) et [Repartition des Tâches](https://sharing.clickup.com/l/h/4-32571374-1/226c80c2a30dcb4)
 
 Le diagramme de Gantt:
-![Diagramme de Gantt](../Images/Diagramme-Gantt.png)
+![Diagramme de Gantt](../More/Images/Diagramme-Gantt.png)
 
 ## Ressources
 

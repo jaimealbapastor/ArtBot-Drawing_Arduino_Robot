@@ -14,23 +14,23 @@ Répartition des tâches dans **[WorkSpace ClickUp](https://sharing.clickup.com/
 
 - [x] Choisir type de structure
 - [ ] Système pour changer les couleurs
-- [ ] Shematiser les pièces avant la modélisation
-- [ ] Modelisation des pièces
-- [ ] Assemblage et animation Onshape
+- [x] Shematiser les pièces avant la modélisation
+- [x] Modelisation des pièces
+- [x] Assemblage et animation Onshape
 
 ## Partie Electronique
 
-- [ ] Shématiser le circuit
+- [x] Shématiser le circuit
 - [x] Vérifier les composants necessaires (et les lister dans [Matériel.md](Matériel.md))
 - [x] Choix des moteurs
-- [ ] Demande d'achat des composants manquants
+- [x] Demande d'achat des composants manquants
 
 ## Partie Programmation
 
 - [ ] Chercher documentation
 
   - [ ] Librairies
-  - [ ] Organisation du code
+  - [x] Organisation du code
 
 - [ ] Shématiser main code
   - [ ] variables
@@ -51,7 +51,7 @@ Répartition des tâches dans **[WorkSpace ClickUp](https://sharing.clickup.com/
 
 ## Partie Mécanique / Eléctronique
 
-- [ ] Produire les pièces
+- [x] Produire les pièces
 - [ ] Assemblage + intégration des composants
 - [ ] Créer mallette pour faciliter le transport
 

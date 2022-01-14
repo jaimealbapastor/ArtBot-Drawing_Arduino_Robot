@@ -10,7 +10,7 @@ Ce rapport correspond au travail fourni avant la première séance de TD.
 
 - Creation du [WorkSpace ClickUp](https://sharing.clickup.com/l/h/4-32571374-1/226c80c2a30dcb4)
 - Répartition des tâches dans [WorkSpace ClickUp](https://sharing.clickup.com/l/h/4-32571374-1/226c80c2a30dcb4)
-- Diagramme de Gantt dans [Diagramme-Gantt](../Images/Diagramme-Gantt.png)
+- Diagramme de Gantt dans [Diagramme-Gantt](../More/Images/Diagramme-Gantt.png)
 
 # Séance 1
 
@@ -24,7 +24,7 @@ J'ai préféré consacrer la première séance à l'organisation globale du proj
 **1. Mécanisme de ArtRobot.**
 
 On s'est inspirés du système de robot de traçage [H-Robot](http://www.doublejumpelectric.com/projects/core_xy/2014-07-15-core_xy/) qui utilise une seule courrie dentée pour bouger selon les axes x et y.<br />  
-![HRobot](../Images/HRobot.jpg)
+![HRobot](../More/Images/HRobot.jpg)
 
 Il y a aussi un autre système similaire appelé CoreXY qui est supposé être un peu plus précis mais plus complexe à construire, donc on a décidé de conserver le H-Robot puisque nous voulons aussi implémenter le changement de couleur.
 
@@ -51,20 +51,20 @@ Ce moteur ayant 4 cables (reliés 2 à 2), j'ai utilisé une petite astuce pour 
 **Remarque de M. Peter :**  
 En tournant manuellement la partie mobile du moteur on ne peut pas deviner dans quel sens le courant va passer. C'est pour ça que si le courant généré est **trop important** et dans le **sens contraire à celui que la led accepte**, alors la led pourrait griller.
 
-Puis j'ai procédé à tester le moteur (_avec la supervision de M. Jacquemod pour éviter de griller le driver_) avec un [petit programme](../Tests/StepMotorTest1.ino) récuperé dans le superbe cours de M.Masson. Le moteur a bien fonctionné.  
-![photo](../Images/steppermotor1.jpeg)
+Puis j'ai procédé à tester le moteur (_avec la supervision de M. Jacquemod pour éviter de griller le driver_) avec un [petit programme](../More/Tests/StepMotorTest1.ino) récuperé dans le superbe cours de M.Masson. Le moteur a bien fonctionné.  
+![photo](../More/Images/steppermotor1.jpeg)
 
 # Séance 2 - 16/12
 
 Cette deuxième séance a été consacrée à la recherche et compréhension des fichiers .ino et programmes en c++.
 
-Après avoir retesté le moteur pas à pas, je me suis rendu compte que l'utilisation de fonctions **delay()** dans le [programme](../Tests/StepMotorTest1.ino) sont totalement inserviables pour notre projet puisque les moteurs pas à pas doivent fonctionner indépendamment l'un de l'autre et au même temps. 
+Après avoir retesté le moteur pas à pas, je me suis rendu compte que l'utilisation de fonctions **delay()** dans le [programme](../More/Tests/StepMotorTest1.ino) sont totalement inserviables pour notre projet puisque les moteurs pas à pas doivent fonctionner indépendamment l'un de l'autre et au même temps. 
 
 1. J'ai donc eu l'idée d'écrire ma propre librairie en m'informant sur le site officiel d'Arduino: [Writing a Library for Arduino](https://www.arduino.cc/en/Hacking/LibraryTutorial). Ceci m'a permis de mieux comprendre comment le language **c++** fonctionne et comment on peut **créer des classes** (deux types de fichiers: .cpp et .h).
 
 2. Après m'être longtemps informé, une phrase m'est venue en tête: *"Tout problème qu'on puisse rencontrer a déjà été rencontré et résolu par quelqu'un d'autre"*. J'ai donc retrouvé des librairies comme **[AccelStepper](https://www.arduino.cc/reference/en/libraries/accelstepper/)** qui permettent de contrôler les moteurs pas à pas très facilement.
 
-3. Puis j'ai lu la documentation du [Stepper Speed Control](https://www.arduino.cc/en/Tutorial/LibraryExamples/StepperSpeedControl) du site officiel Arduino mais qui utilise un autre type de driver ([SN75441 0ne H-Bridge](https://www.ti.com/lit/ds/symlink/sn754410.pdf)). Puis j'ai trouvé ce [site](https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/) qui utilise notre **driver A4988** et qui explique très bien, étape par étape, comment le circuit et le [programme](../Tests/StepMotorPosition.ino) fonctionnent.
+3. Puis j'ai lu la documentation du [Stepper Speed Control](https://www.arduino.cc/en/Tutorial/LibraryExamples/StepperSpeedControl) du site officiel Arduino mais qui utilise un autre type de driver ([SN75441 0ne H-Bridge](https://www.ti.com/lit/ds/symlink/sn754410.pdf)). Puis j'ai trouvé ce [site](https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/) qui utilise notre **driver A4988** et qui explique très bien, étape par étape, comment le circuit et le [programme](../More/Tests/StepMotorPosition.ino) fonctionnent.
 
 ## Problème rencontré
 Pour être sûr qu'avec la librairie **AccelStepper** on pouvait contrôler deux moteurs à la fois, j'ai préféré me renseigner avant de commencer à coder. En effet, j'ai bien fait de m'inquiéter puisque d'après ces sites plusieurs personnes ont rencontré des problèmes similaires :
@@ -94,7 +94,7 @@ Nous avons discuté avec Frédéric Juan une méthode différente pour fabriquer
 On a donc décidé de maintenir le support pour les moteurs et de créer une boite en bois pour ranger la plaque arduino et tous les cables. Ceci permet de maintenir le projet propre et organisé ainsi que plus élégant.  
 
 J'ai donc téléchargé le fichier .svg du générateur de boîtes **[Box.py](https://www.festi.info/boxes.py/)**, et après modification avec **Inkscape**, nous avons coupé et assemblé les pièces de la boîte:  
-![Box](../Images/Box.jpg)
+![Box](../More/Images/Box.jpg)
 
 D'autre part, l'une des pièces est en cour d'impression (j'irai la récupérer lundi) et si tout est correct on imprimera le reste.
 
@@ -115,7 +115,7 @@ Pour pouvoir commencer à faire des tests il nous faut que la partie mécanique 
 Au lieu d'imprimer les pièces en 3D, on les a produites en bois car c'est plus rapide et plus faciles à modifier si jamais il manque quelque chose.  
 
 On a donc coupé les pièces avec le laser, perceuse, etc. Entre autres couper les barres en fer et couper les boîtes pour fixer les moteurs:  
-![BoiteMoteurs](../Images/boite_stepper.jpeg)  
+![BoiteMoteurs](../More/Images/boite_stepper.jpeg)  
 Il ne manque plus qu'à finir la pièce du milieu pour coller et fixer l'ensemble des pièces.
 
 # Séance 4 - 13/01/22
@@ -125,7 +125,7 @@ Il ne manque plus qu'à finir la pièce du milieu pour coller et fixer l'ensembl
 On a donc choisit un mécanisme **simple** et à la fois **efficace** pour dessiner avec un seul stylo. De plus on pourra le changer plus tard afin de changer de couleur. *(Pièce produite par Adrien)*
 
 2 - J'ai refait le montage du circuit pour tester les moteurs. Et, afin de **ne pas me tromper** et **soigner la présentation**, j'ai regroupé par fonctionnalité les cables avec du scotch: 
-![photo cables](../Images/boite.jpeg)
+![photo cables](../More/Images/boite.jpeg)
 
 3 - J'ai donc testé à nouveau les moteurs et le même problème se produit: **un des moteurs bouge** tout seul.
 
