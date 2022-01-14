@@ -48,7 +48,7 @@ Pour finir, j'ai commencé à tester le moteur NEMA-17.
 Ce moteur ayant 4 cables (reliés 2 à 2), j'ai utilisé une petite astuce pour recconnaitre ceux qui vont ensemble. En tournant manuellement la partie mobile du moteur, un petit champ magnétique est généré puis transformé en courant (utilisation inverse du moteur). On peut donc créer un circuit **"fermé"** avec une résistance et une led qui s'allumera que lorsqu'il y aura un courant passant. On pourra alors identifier si le circuit est réellement fermé ou pas (si la led ne s'allume pas alors le circuit n'est pas fermé).  
 [VideoYoutube](https://youtu.be/oWQ2Gkv-7zA)
 
-**Remarque de M. Jacquemod :**  
+**Remarque de M. Peter :**  
 En tournant manuellement la partie mobile du moteur on ne peut pas deviner dans quel sens le courant va passer. C'est pour ça que si le courant généré est **trop important** et dans le **sens contraire à celui que la led accepte**, alors la led pourrait griller.
 
 Puis j'ai procédé à tester le moteur (_avec la supervision de M. Jacquemod pour éviter de griller le driver_) avec un [petit programme](../Tests/StepMotorTest1.ino) récuperé dans le superbe cours de M.Masson. Le moteur a bien fonctionné.  
@@ -98,5 +98,38 @@ J'ai donc téléchargé le fichier .svg du générateur de boîtes **[Box.py](ht
 
 D'autre part, l'une des pièces est en cour d'impression (j'irai la récupérer lundi) et si tout est correct on imprimera le reste.
 
+# Séance 4 - Travail Maison
 
+## Chez moi
+J'ai monté le circuit pour tester les deux steper moteurs à la fois. Cependant un des moteurs tourne tout seul meme s'il est supposé être innactif.  
+
+Pour comprendre le problème j'ai lu la tension à l'entrée "steps" du driver. Cette entrée sert à tourner le moteur d'un pas lorsque la valeur HIGH est envoyée. J'ai donc trouvé des valeurs HIGH et LOW aléatoires qui provoquaient le mouvement du moteur. 
+
+Après demander l'avis de mes camarades, on a déduis que ce problème venait d'un bruit induit probablement par le courant 12V.  
+
+J'ai donc demandé de l'aide à M. Masson qui m'a très aimablement pendant la soirée. Cependant on n'a pas pu trouver d'explication précise, et on a décidé de réessayer pendant la scéance où il serait présent.
+
+## Au FabLab
+
+Pour pouvoir commencer à faire des tests il nous faut que la partie mécanique soit finie.  
+Au lieu d'imprimer les pièces en 3D, on les a produites en bois car c'est plus rapide et plus faciles à modifier si jamais il manque quelque chose.  
+
+On a donc coupé les pièces avec le laser, perceuse, etc. Entre autres couper les barres en fer et couper les boîtes pour fixer les moteurs:  
+![BoiteMoteurs](../Images/boite_stepper.jpeg)  
+Il ne manque plus qu'à finir la pièce du milieu pour coller et fixer l'ensemble des pièces.
+
+# Séance 4 - 13/01/22
+
+1 - Notre objectif le plus important est de **finir la partie mécanique** du projet. Il ne manque plus que la pièce centrale pour le support du stylo.  
+
+On a donc choisit un mécanisme **simple** et à la fois **efficace** pour dessiner avec un seul stylo. De plus on pourra le changer plus tard afin de changer de couleur. *(Pièce produite par Adrien)*
+
+2 - J'ai refait le montage du circuit pour tester les moteurs. Et, afin de **ne pas me tromper** et **soigner la présentation**, j'ai regroupé par fonctionnalité les cables avec du scotch: 
+![photo cables](../Images/boite.jpeg)
+
+3 - J'ai donc testé à nouveau les moteurs et le même problème se produit: **un des moteurs bouge** tout seul.
+
+J'ai donc  essayé de **recalibrer le potentiometre** du driver et on dirait que ça fonctionne. Cependant la **tension aux bornes** de l'un est bien plus **faible** que l'autre driver. Au moment où je ferai des tests avec la partie mécanique terminée je pourrai vérifier si le **couple** est assez grand ou pas.
+
+4 - Pour finir j'ai cherché comment ajouter des fichiers **.h** ou **.cpp** pour éviter que tout le code soit trop compact. Ainsi on pourra appeler des fonctions définies dans un autre fichier.
 

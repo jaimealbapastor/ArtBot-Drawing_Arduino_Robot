@@ -4,7 +4,6 @@
 */
 
 #include "Arduino.h"
-#include "StepperMotor.h"
 #include <AccelStepper.h>
 
 #define motorInterfaceType 1
@@ -26,8 +25,8 @@ Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2) {
   AccelStepper _stepper1 = AccelStepper(motorInterfaceType, _step1, _dir1);
   AccelStepper _stepper2 = AccelStepper(motorInterfaceType, _step2, _dir2);
 
-  _stepper1.setMaxSpeed(300); // in steps per second
-  _stepper2.setMaxSpeed(300);
+  _stepper1.setSpeed(100); // in steps per second
+  _stepper2.setSpeed(100);
 
   // #### Pen state ####
   double _currentDirection = 0;
