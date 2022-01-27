@@ -133,3 +133,16 @@ J'ai donc  essayé de **recalibrer le potentiometre** du driver et on dirait que
 
 4 - Pour finir j'ai cherché comment ajouter des fichiers **.h** ou **.cpp** pour éviter que tout le code soit trop compact. Ainsi on pourra appeler des fonctions définies dans un autre fichier.
 
+# Séance 5 - Travail Maison
+
+Ajout de lcd pour visualiser les actions
+Problème d'initialisation LiquidCristal
+
+2 types of gcode: vector and rasper
+using inkscape to export gcode
+CAMotics pour visualiser
+
+comprendre gcode
+
+[vidéo récapitulative](https://youtu.be/TPImFBnE6Mc)
+

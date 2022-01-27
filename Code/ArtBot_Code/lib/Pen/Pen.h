@@ -2,16 +2,26 @@
     StepperMotor.h - Library for stepper motor mouvement
     Created by Jaime Alba Pastor, December 16, 2021.
 */
+
 #ifndef Pen_h
 #define Pen_h
 
-#include "Arduino.h"
-#include <AccelStepper>
+#include <Arduino.h>
+#include <AccelStepper.h>
+#include <LiquidCrystal.h>
 
 class Pen {
 public:
+  // Initialize
   Pen();
-  void forward();
+  Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2);
+  void lcdbegin(int rs, int enable, int D4, int D5, int D6, int D7);
+
+  // #### Motors ####
+  void moveX(int steps);
+  void moveY(int steps);
+  void forward(int steps);
+  int lol();
 
 private:
   // #### Motors ####
@@ -27,9 +37,9 @@ private:
   int _x;
   int _y;
 
-  // #### Functions ####
-  void moveX();
-  void moveY();
+  // #### LCD ####
+  bool _lcdexists;
+  LiquidCrystal _lcd;
 };
 
 #endif
