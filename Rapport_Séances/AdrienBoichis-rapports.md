@@ -70,8 +70,23 @@ Lors de cette séance, nous avions à coeur d'avancer un maximum. Toutefois, lor
 
 
 
-## Rapport de la séance 5
+## Rapport de la séance 5 (02/02/2022)
 ### Ce rapport correspond au travail fourni pendant la cinquième scéance de TD.
+Lors de cette séance à la suite du winter break, j'avais bien avancé de mon côté sur le fonctionement du cerveau moteur pour pouvoir monter et descendre le stylo en fonction de la position dans laquel on veut que le stylo soit. Toutefois lors de cette séance le but était d'avancer surtout sur la partie mecanqiue pour pouvoir faire le premier test du fonctionement globale et avoir un mouvement en x et en y. J'ai donc commencé par positioner les roulements à l'aide de visses très fines qui peuvent ainsi passer dans les roulements, j'ai donc pu positioner les 6 roulements dans des positions spécifiques.
+
+![roulements](../More/Images/roulements.jpg)
+
+Ensuite, j'ai donc pu positioner tout notre system sur la planche de pre fabriqué pour que l'on puisse ensuite fixer les boites des moteurs, et commencé à faire les trous pour positioner la boite avec tout le system arduino en dessous de notre plaque. Je pourrais ensuite mettre les petits poteaux au bout de la planche pour que tout soit à la même hauteur et que cela soit plus érgonomisé.
+
+![moteurs](../More/Images/moteurs.jpg)
+
+
+Ensuite on a donc positioner les boites sur la planche et pouvoir les coller et mettre les moteurs avec leurs roulements au dessus, et pouvoir tester les mouvemenrs en x et en y, on a donc pu mettre notre fil crocheté et le disposé sur notre dispostif, je n'ai pas pu pu les accroché encore car Jaime avait besoin de faire des tests moteurs. On a donc tout notre dispositif matériel mis en place et notre fonctionement à pu marcher et on a pu voir notre premier mouvement en x et en y !!
+
+
+Choses à faire : decouper la plaque pour pouvoir mettre deux recepteurs des tubes de fer 
+cerveau moteur complet pour le stylo 
+blutooth, l'objectif est de voir la progression de notre dessin en temps réel à l'aide du blutooth.  
 
 
 
