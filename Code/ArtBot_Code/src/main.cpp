@@ -3,11 +3,8 @@
 
 // VARIABLE DECLARATION
 
-Pen pen(8, 9, 10, 11);
+Pen pen(8, 9, 2, 3);
 
-void setup() {
-  pen.lcdbegin(2, 3, 4, 5, 6, 7);
-  pen.moveX(101);
-}
+void setup() { pen.moveX(100); }
 
 void loop() {}

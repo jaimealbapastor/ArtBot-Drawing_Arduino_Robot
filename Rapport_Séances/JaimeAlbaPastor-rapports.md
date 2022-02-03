@@ -135,14 +135,40 @@ J'ai donc  essayé de **recalibrer le potentiometre** du driver et on dirait que
 
 # Séance 5 - Travail Maison
 
-Ajout de lcd pour visualiser les actions
-Problème d'initialisation LiquidCristal
+Un camarade de classe m'a recommandé un plugin de VSCode appelé **PlatFormIO** qui permet de controler l'arduino plus facilement. Tout est expliqué dans le fichier [EXPLICATION.md](../Code/EXPLICATION.md) 
 
-2 types of gcode: vector and rasper
-using inkscape to export gcode
-CAMotics pour visualiser
+J'ai ajouté un **écran lcd** pour visualiser les actions pendant l'impression.
+Cependant il y a eu un problème de code pour l'initialisation de l'objet **LiquidCristal** dans le fichier .h.  
+Avec l'aide d'un camarade de SI on a pu trouver une solution et faire fonctionner l'écran.  
 
-comprendre gcode
+## Dessin vectoriel d'une image
 
-[vidéo récapitulative](https://youtu.be/TPImFBnE6Mc)
+Je me suis renseigné sur les **CNC machines** (Computer Numerical Control) et comment elles réussissent à tracer des figures. J'ai trouvé le **G-Code**, un language qui se traduit par un ensemble de vecteurs et qui permet à la machine de bouger dans la direction souhaitée.  
 
+Il y a 2 **tipes de G-Code**: Vector (image vectorielle) et Raster (image bitmap).
+![image explicative](../More/Images/vector-raster_orig.jpg)
+
+Le dessin d'une image vectorielle est plus rapide mais les détails sont souvent perdus. Et le dessin d'une image bitmap met beaucoup plus de temps mais tous les éléments sont dessinés, mais avec une qualité moin bonne.
+
+### Premiers test
+
+J'ai utilisé **Inkscape** pour exporter l'image en G-Code puis utilisé le logiciel **CAMotics** pour visualiser le rendu étant donné que la martie mécanique de ArtBot n'est pas encore finie.  
+
+Voici une **[vidéo récapitulative](https://youtu.be/TPImFBnE6Mc)** avec une démo.  
+Il ne reste plus qu'à comprendre le format G-Code et le traduire en code pour notre machine.
+
+# Séance 5 - 02/02/2022
+
+Cette séance j'étais très motivé pour résoudre le probleme qui me tracasse pendant des semaines. Un bruit **mistérieux** qui fait bouger les moteurs aléatoirement.  
+Avec l'aide de M. Masson, on a vérifié que les moteurs et les drivers n'étaient pas cassés. Pour les drivers il a fallu ajuster le **potentiomètre interne** pour laisser passer plus de courrant et que le couple des moteurs soit plus élevé.  
+À part ça tout fonctionnait correctement et j'ai donc supposé que *l'erreur venait du code*. Après un bon lapse de temps j'ai tenté d'initialiser les pinMode au début du code au cas où la librairie LiquidCristal ne le faisait pas automatiquement. Et bingo ! Grâce à ça il n'y avait plus de bruit. 
+
+On a aussi fini de monter les pièces de la machine et ajuster la courroie dentée pour avoir une distance parfaite.  
+Puis l'après midi je suis revenu au FabLab pour ajouter des *petits morceaux en bois* utilisés pour **élever en hauteur les roulements**. Sinon la courroie touchait la pièce centrale.  
+
+Voici le rendu:  
+![image](../More/Images/structure_finale_1.jpeg) ![image](../More/Images/structure_finale_2.jpeg) ![image](../More/Images/structure_finale_3.jpeg)  
+
+Je vais enfin pouvoir commencer à faire des tests !
+
+Note pour la prochaine séance: ajouter deux autres roulements dans l'axe y, sinon ils bloquent parfois.

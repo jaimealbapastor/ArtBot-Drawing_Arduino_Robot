@@ -47,8 +47,8 @@ void Pen::lcdbegin(int rs, int enable, int D4, int D5, int D6, int D7) {
 }
 
 void Pen::moveX(int steps) {
-  // _stepper1.move(steps);
-  // _stepper2.move(steps);
+  _stepper1.move(steps);
+  _stepper2.move(steps);
 
   if (_lcdexists) {
     String s = String(steps);
