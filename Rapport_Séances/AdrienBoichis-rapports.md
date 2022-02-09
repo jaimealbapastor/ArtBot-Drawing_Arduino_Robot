@@ -90,8 +90,14 @@ blutooth, l'objectif est de voir la progression de notre dessin en temps réel �
 
 
 
-## Rapport de la séance 6
+## Rapport de la séance 6 (09/02/2022)
 ### Ce rapport correspond au travail fourni pendant la sixième scéance de TD.
+
+Cette semaine, la séance réprésentait le dernier moment de travailler sur la partie mécanique de notre projet. J'ai donc pu fixé tous les problèmes que nous avions sur la partie mecanique. J'ai donc pu d'abord fixé le premier problème que nous avions, c'etait un jeu présent sur la partie des pièces qui bougent en y, en effet il y avait un seul petit tubes qui permettait aux tubes de fer de tenir, j'en ai donc mis deux sur chaque pièce variant sur y de sorte à ce que l'on ait plus le jeu sur ces pièces qui parfois ne permettait pas à notre pièce de bouger avec les moteurs car le jeu mettait les pièces un peu de travers et ainsi mettait de la resitence et les moteurs ne forcaient pas de la bonne facon.
+Ensuite j'ai donc pu agraffer les cables entre eux et sur la pièce qui va tenir le stylo. Notre pièce bouge donc en x et en y sans difficuté, à l'aide des moteurs et sur toute la largeur et la longueur d'une feuille. 
+J'ai ensuite pu donc accroché le cerveau moteur sur la pièce centrale et commencé a confectioné ce qui va tenir notre stylo. J'avais déja réalisé le mecanisme pour le lever et le descendre, j'ai donc pu attquer la partie électronique, et j'ai pu tester sur un autre serveaumoteur si le mouvement demandé marchait bien. Tout fonctionne comme demandé sur cette partie, on peut donc ajouter le code de descendre et monter le stylo à la partie centrale de l'écriture dans le code génerale. le code du serveau moteur est dépose dans la partie Code du github dans le dossier serveau moteur. 
+
+
 
 
 
