@@ -8,16 +8,16 @@
 
 #include <Arduino.h>
 #include <AccelStepper.h>
-#include <LiquidCrystal.h>
 
 class Pen {
 public:
   // Initialize
   Pen();
   Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2);
-  void lcdbegin(int rs, int enable, int D4, int D5, int D6, int D7);
 
   // #### Motors ####
+  void testMotor1(int steps);
+  void testMotor2(int steps);
   void moveX(int steps);
   void moveY(int steps);
   void forward(int steps);
@@ -37,9 +37,6 @@ private:
   int _x;
   int _y;
 
-  // #### LCD ####
-  bool _lcdexists;
-  LiquidCrystal _lcd;
 };
 
 #endif

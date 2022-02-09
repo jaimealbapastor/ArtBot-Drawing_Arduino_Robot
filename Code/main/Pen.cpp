@@ -9,10 +9,9 @@
 #define stepsPerRev 200
 #define cmPerRev 200
 
-Pen::Pen() : _lcd(2, 4, 5, 6, 7, 8) {}
+Pen::Pen() {}
 
-Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2)
-    : _lcd(2, 4, 5, 6, 7, 8) {
+Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2) {
   // #### Motors ####
   _dir1 = dirPin1;
   _step1 = stepPin1;
@@ -35,42 +34,26 @@ Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2)
   _x = 0;
   _y = 0;
 
-  // #### LCD ####
-  _lcdexists = false;
 }
 
-void Pen::lcdbegin(int rs, int enable, int D4, int D5, int D6, int D7) {
-  _lcdexists = true;
-  _lcd = LiquidCrystal(rs, enable, D4, D5, D6, D7);
-  _lcd.begin(16, 2);
-  _lcd.print("Initialized");
+void Pen::testMotor1(int steps){
+  _stepper1.move(steps);
+}
+
+void Pen::testMotor2(int steps){
+  _stepper2.move(steps);
 }
 
 void Pen::moveX(int steps) {
   _stepper1.move(steps);
   _stepper2.move(steps);
 
-  if (_lcdexists) {
-    String s = String(steps);
-    _lcd.clear();
-    _lcd.setCursor(0, 0);
-    _lcd.print(String("X : " + s));
-    _lcd.setCursor(0, 1);
-    _lcd.print(String("Y : 0"));
-  }
+
 }
 
 void Pen::moveY(int steps) {
   _stepper1.move(steps);
   _stepper2.move(-steps);
-  if (_lcdexists) {
-    String s = String(steps);
-    _lcd.clear();
-    _lcd.setCursor(0, 0);
-    _lcd.print(String("X : 0"));
-    _lcd.setCursor(0, 1);
-    _lcd.print(String("Y : " + s));
-  }
 }
 
 void Pen::forward(int steps) {
