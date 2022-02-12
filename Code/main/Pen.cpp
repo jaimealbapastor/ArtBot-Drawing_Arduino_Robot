@@ -13,34 +13,36 @@ Pen::Pen() {}
 
 Pen::Pen(int dirPin1, int stepPin1, int dirPin2, int stepPin2) {
   // #### Motors ####
-  _dir1 = dirPin1;
-  _step1 = stepPin1;
-  _dir2 = dirPin2;
-  _step2 = stepPin2;
+  this->_dir1 = dirPin1;
+  this->_step1 = stepPin1;
+  this->_dir2 = dirPin2;
+  this->_step2 = stepPin2;
 
   pinMode(dirPin1, OUTPUT);
   pinMode(stepPin1, OUTPUT);
   pinMode(dirPin2, OUTPUT);
   pinMode(stepPin2, OUTPUT);
 
-  _stepper1 = AccelStepper(motorInterfaceType, _step1, _dir1);
-  _stepper2 = AccelStepper(motorInterfaceType, _step2, _dir2);
+  this->_stepper1 = AccelStepper(motorInterfaceType, this->_step1, this->_dir1);
+  this->_stepper2 = AccelStepper(motorInterfaceType, this->_step2, this->_dir2);
 
-  _stepper1.setSpeed(100); // in steps per second
-  _stepper2.setSpeed(100);
+  this->_stepper1.setSpeed(100); // in steps per second
+  this->_stepper2.setSpeed(100);
 
   // #### Pen state ####
-  _currentDirection = 0;
-  _x = 0;
-  _y = 0;
+  this->_currentDirection = 0;
+  this->_x = 0;
+  this->_y = 0;
 
 }
 
-void Pen::testMotor1(int steps){
-  _stepper1.move(steps);
+String Pen::testMotor1(int steps) {
+
+  //this->_stepper1.move(steps);
+  return String(this->_dir1);
 }
 
-void Pen::testMotor2(int steps){
+void Pen::testMotor2(int steps) {
   _stepper2.move(steps);
 }
 
@@ -61,4 +63,6 @@ void Pen::forward(int steps) {
   _stepper1.setCurrentPosition(0);
 }
 
-int Pen::lol() { return 123; }
+int Pen::lol() {
+  return 123;
+}

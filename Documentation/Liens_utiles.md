@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=5492ZjivAQ0
 ### Modèle d'inspiration
 
 https://www.arnabkumardas.com/topics/cnc/how-to-make-an-arduino-drawing-machine/
+https://github.com/arnabdasbwn/grbl-coreXY-servo
 
 ### Comparaison avec CoreXY robot
 

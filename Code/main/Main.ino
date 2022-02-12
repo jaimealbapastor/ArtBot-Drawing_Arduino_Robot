@@ -1,53 +1,37 @@
-#include <AccelStepper.h>
+#include <Arduino.h>
 #include "Pen.h"
 
-#define dirPin 2
-#define stepPin 3
-#define motorInterfaceType 1
+// VARIABLE DECLARATION
 
-AccelStepper stepper = AccelStepper(motorInterfaceType, stepPin, dirPin);
-
+Pen pen(8, 9, 2, 3);
+String a;
 
 void setup() {
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  stepper.setMaxSpeed(1000); // in steps per second
-
+  Serial.begin(9600);
+  Serial.println("Ready !");
 }
 
 void loop() {
-  stepper.setCurrentPosition(0);
+  while (Serial.available() == 0) {}
+  a = Serial.readString();
+  Serial.println(a);
 
-  // Run the motor forward at 200 steps/second until the motor reaches 400 steps (2 revolutions):
-  while (stepper.currentPosition() != 400)
-  {
-    stepper.setSpeed(200);
-    stepper.runSpeed();
+  if (a == "1") {
+    Serial.println(pen.testMotor1(50));
+    delay(2000);
+  } else if (a == 50) {
+    pen.testMotor2(50);
+    delay(2000);
+  } else if (a == "3") {
+    pen.testMotor1(-50);
+    delay(2000);
+  } else if (a == "4") {
+    pen.testMotor2(-50);
+    delay(2000);
+
   }
 
-  delay(1000);
 
-  stepper.setCurrentPosition(0);
 
-  // Run the motor backwards at 600 steps/second until the motor reaches -200 steps (1 revolution):
-  while (stepper.currentPosition() != -200)
-  {
-    stepper.setSpeed(-600);
-    stepper.runSpeed();
-  }
 
-  delay(1000);
-
-  stepper.setCurrentPosition(0);
-
-  // Run the motor forward at 400 steps/second until the motor reaches 600 steps (3 revolutions):
-  while (stepper.currentPosition() != 600)
-  {
-    stepper.setSpeed(400);
-    stepper.runSpeed();
-  }
-
-  delay(3000);
 }

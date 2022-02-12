@@ -135,7 +135,7 @@ J'ai donc  essayé de **recalibrer le potentiometre** du driver et on dirait que
 
 # Séance 5 - Travail Maison
 
-Un camarade de classe m'a recommandé un plugin de VSCode appelé **PlatFormIO** qui permet de controler l'arduino plus facilement. Tout est expliqué dans le fichier [EXPLICATION.md](../Code/EXPLICATION.md) 
+Un camarade de classe m'a recommandé un plugin de VSCode appelé **PlatFormIO** qui permet de controler l'arduino plus facilement. Tout est expliqué dans le fichier [EXPLICATION.md](../More/Useless/EXPLICATION.md) 
 
 J'ai ajouté un **écran lcd** pour visualiser les actions pendant l'impression.
 Cependant il y a eu un problème de code pour l'initialisation de l'objet **LiquidCristal** dans le fichier .h.  
@@ -172,3 +172,26 @@ Voici le rendu:
 Je vais enfin pouvoir commencer à faire des tests !
 
 Note pour la prochaine séance: ajouter deux autres roulements dans l'axe y, sinon ils bloquent parfois.
+
+# Séance 6 - 09/02/2022
+
+Tout d'abord j'ai **désinstallé le plugin PlatformIO** parce que je ne l'ai pas configuré correctement et cela prend pas mal de temps.  
+J'ai donc décidé de me centrer sur le code sur l'**IDE Arduino** pour ne pas avoir de complications.  
+Je regarderai plus en détail PlatformIO après le projet.  
+
+Pendant que mon camarade modifiait la partie mécanique j'ai regardé comment *envoyer un fichier G-Code vers l'arduino* et le traduire en commandes pour dessiner.  
+Le [modèle d'inspiration](https://github.com/arnabdasbwn/grbl-coreXY-servo) utilise la **librairie GRBL modifiée** pour cette machine en particulier. Cependant, même avec l'aide de Mme. Benouakta, je n'ai pas réussi à comprendre le code et comment l'utiliser.  
+Je vais donc regarder des vidéos de comment utiliser la librairie GRBL originelle et essayer de l'adapter à notre projet.  
+https://lebearcnc.com/installer-grbl-sur-larduino-televerser/  
+
+J'ai aussi trouvé **UGS Platform** un nouveau moyen très efficace d'envoyer du G-Code.
+
+Une fois la partie mécanique finie, j'ai commencé à faire des **tests** mais le programme ne fonctionnait pas correctement.  
+J'ai eu beaucoup de mal à retrouver l'erreur parce que je ne contrôle pas très bien le langage C++.  
+Finalement j'ai trouvé que la **librairie AccelStepper** ne fais pas ce que lui est demandé. Je vais donc m'informer pendant la semaine de vacances pour la faire fonctionner.  
+
+Pour finir, on a remarqué ou plutôt toute la classe a remarqué que notre machine faisait beaucoup **trop de bruit** lorsqu'elle bougeait. Ceci était causé parceque la pièce centrale n'était pas accrochée sur son centre mais sur un côté. Ceci causait beaucoup de **vibrations**.  
+J'ai donc réutilisé et modifié une pièce d'un projet précédent pour l'accrocher par le centre. 
+
+
+
