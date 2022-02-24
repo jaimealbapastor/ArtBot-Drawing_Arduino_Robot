@@ -94,15 +94,38 @@ blutooth, l'objectif est de voir la progression de notre dessin en temps réel �
 ### Ce rapport correspond au travail fourni pendant la sixième scéance de TD.
 
 Cette semaine, la séance réprésentait le dernier moment de travailler sur la partie mécanique de notre projet. J'ai donc pu fixé tous les problèmes que nous avions sur la partie mecanique. J'ai donc pu d'abord fixé le premier problème que nous avions, c'etait un jeu présent sur la partie des pièces qui bougent en y, en effet il y avait un seul petit tubes qui permettait aux tubes de fer de tenir, j'en ai donc mis deux sur chaque pièce variant sur y de sorte à ce que l'on ait plus le jeu sur ces pièces qui parfois ne permettait pas à notre pièce de bouger avec les moteurs car le jeu mettait les pièces un peu de travers et ainsi mettait de la resitence et les moteurs ne forcaient pas de la bonne facon.
+
 Ensuite j'ai donc pu agraffer les cables entre eux et sur la pièce qui va tenir le stylo. Notre pièce bouge donc en x et en y sans difficuté, à l'aide des moteurs et sur toute la largeur et la longueur d'une feuille. 
+
 J'ai ensuite pu donc accroché le cerveau moteur sur la pièce centrale et commencé a confectioné ce qui va tenir notre stylo. J'avais déja réalisé le mecanisme pour le lever et le descendre, j'ai donc pu attquer la partie électronique, et j'ai pu tester sur un autre serveaumoteur si le mouvement demandé marchait bien. Tout fonctionne comme demandé sur cette partie, on peut donc ajouter le code de descendre et monter le stylo à la partie centrale de l'écriture dans le code génerale. le code du serveau moteur est dépose dans la partie Code du github dans le dossier serveau moteur. 
 
 
 
 
 
-## Rapport de la séance 7
+## Rapport de la séance 7(23/02/2022)
 ### Ce rapport correspond au travail fourni pendant la septième scéance de TD.
+
+Lors de cette séance, nous sommes venu avec la partie mécanique proche de la version finale, avec peu de changements à faire dessus et seulement quelques améliroations à apporter pour que tout fonctionne parfaitement. 
+En effet il y a encore certains moments ou le systeme bloque un petit peu:
+- A l'endroit ou nous avons relié nos deux cables avec des agraphes, ce qui fait un petit frotement suplémentaire à l'emplacment du roulement et qui fait donc plus forcer le moteur et donc pourra peut être engendré un manque de précision sur cet aspect lors des dessins. L'idée que j'ai eu pour résoudre ce probleme est de repartir avec un nouveau cable et de le mettre en place cette fois ci de sorte à ce que la jonction se fasse à un endroit ou il est sur toute sa longueur sur l'axe y de sorte à ce que il ne rentre pas en contact avec les roulemenrs lors des mouvements 
+
+ ![bloquage1](../More/Images/bloquage1.jpg)
+
+
+- On a aussi un autre bloquage qui est présent entre le cable et la pièce qui va tenir le stylo, en effet cette pièce présente plusieurs visses qui pemettent de la tenir toutefois celles ci entrent en contact avec le cable et ne permetent ainsi pas au cable de coulisser fluidement. J'ai observé ceci en faisant bouger le système et en observant que à certains moments celui ci s'arretait de bouger d'un coup. La solution que j'ai trouvé est de retiré les visses qui gène et des remplacer par un fil de fer qui prends moins de place et pourra tenir tout antant la structure.
+
+![bloquage2](../More/Images/bloquage2.jpg)
+
+
+Ensuite, j'ai continué d'effectué des tests sur le mouvement du cerveau moteur pour que celui bouge parfaitement avec le stylo est que le stylo soit ainsi dans la position optimale pour écrire. 
+
+
+J'ai aussi pu commencer à travailler la partie blutooth de notre projet qui sera de transmettre en temps réel l'avancée de l'écriture à notre telephone.
+
+![blutooth](../More/Images/blutooth.jpg)
+
+Et pour finir je me suis penché sur la partir du code du mouvement en x et en y pour pouvoir continuer les tests et identifier les problèmes que nous rencontrons sur les différents mouvements du stylo.
 
 
 
