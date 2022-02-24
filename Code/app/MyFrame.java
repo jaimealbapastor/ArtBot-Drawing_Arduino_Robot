@@ -136,9 +136,9 @@ public class MyFrame extends JFrame implements ActionListener {
         if (e.getSource() == this.importButton) {
             int returnVal = fc.showOpenDialog(this);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
-                //fm.setFile(fc.getSelectedFile());
-                //log("Opening: " + fm.getFileName() + ".");
-                //this.setInfoFile(fm.getFileName());
+                fm.setFile(fc.getSelectedFile());
+                setInfoFile(fm.getFileName());
+                log("Opening: " + fm.getFileName() + ".");
                 // Here open the file
             } else {
                 log("Open command cancelled by user.");

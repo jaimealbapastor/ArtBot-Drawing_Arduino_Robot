@@ -11,7 +11,7 @@ public class FileManager {
     private File file;
     private String port;
 
-    private void setFile(File file) {
+    public void setFile(File file) {
         this.file = file;
     }
 

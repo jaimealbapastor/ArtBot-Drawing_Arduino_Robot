@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e23fa32-0d84-4dae-8a70-eb4ef8430a35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jssc_2_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jssc_2_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/Code/app/.idea/libraries/jssc_2_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/Code/app/.idea/libraries/jssc_2_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/Code/app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/Code/app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/Code/app/PColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/Code/app/PColor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jssc-2.9.4.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/slf4j-api-1.6.1.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -63,5 +66,9 @@
       <updated>1645697851910</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Main Frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main Frame" />
   </component>
 </project>

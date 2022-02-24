@@ -193,5 +193,25 @@ Finalement j'ai trouvé que la **librairie AccelStepper** ne fais pas ce que lui
 Pour finir, on a remarqué ou plutôt toute la classe a remarqué que notre machine faisait beaucoup **trop de bruit** lorsqu'elle bougeait. Ceci était causé parceque la pièce centrale n'était pas accrochée sur son centre mais sur un côté. Ceci causait beaucoup de **vibrations**.  
 J'ai donc réutilisé et modifié une pièce d'un projet précédent pour l'accrocher par le centre. 
 
+# Séance 7 - 23/02  
+
+Pour pouvoir envoyer le **G-Code vers l'arduino** il faut créer une application pour traiter et envoyer l'information vers le **port USB**. La façon la plus simple de le faire est avec la librairie **Swing** de Java.  
+J'ai mis du temps à apprendre comment l'utiliser, mais j'ai finalement pu créer une petite interface qui fonctionne.  
+
+Le projet DrawBot d'il y a deux a aussi une application Java mais ils ont envoyé l'information à travers le **module bluetooth** et non pas par le Serial.  
+
+![image](../More/Images/TSP1.jpg)
+
+On peut **importer** un fichier.  
+
+![image](../More/Images/TSP2.jpg)
+![image](../More/Images/TSP3.jpg)  
+
+C'est une mise en page très basique mais qui permettra d'**acelerer le processus**.  
+
+Après ça, il ne manquera qu'envoyer le fichier par Serial USB puis que l'arduino puisse comprendre le code.  
+
+
+
 
 
