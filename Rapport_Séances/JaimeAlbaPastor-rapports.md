@@ -211,6 +211,25 @@ C'est une mise en page très basique mais qui permettra d'**acelerer le processu
 
 Après ça, il ne manquera qu'envoyer le fichier par Serial USB puis que l'arduino puisse comprendre le code.  
 
+# Séance 8 - 02/03
+
+Dernière scéance.  
+
+J'ai essayé d'envoyer du texte à travers le port USB vers l'arduino.  
+L'idée est la suivante:  
+puisque la capacité mémoire de l'arduino est très réduite, on enverra les intructions une à une à travers la communication serial.  
+
+Pour faire ceci j'ai tester de nombreuses librairies java différentes.  
+- Tout d'abord la librairie **RXTX** qui m'a donné plein de problèmes par rapport aux fichiers source. Apparemment plein de personnes on rencontré les mêmes problèmes qui n'étaient pas faciles du tout à résoudre.  
+- Puis la librairie **JSerialComm** qui avait l'air de bien fonctionner. J'ai eu besoin d'actualiser le JDK de base de java et rajouter un fichier interne. J'ai enfin réussi à me connecter au port USB. Cependant chaque fois que j'essayais d'ouvrir celui ci, une erreur sautait car le port se refermait aussitôt.  
+- Après beaucoup de recherche, j'ai trouvé la librairie **gnu.io** qui est très bien valorée dans la communité. Petit contretemps, la librairie n'est que disponible à traver Maven et non pas avec librairie .jar. Un camarade de SI5 m'a aidé à setup Maven et j'ai enfin pu l'importer. J'ai aussi du désinstaller Java et le réinstaller parce que les librairies précédentes provoquaient des erreurs dans le JDK.  
+
+Finalement la librairie **gnu.io** m'as permis de me connecter au port sans aucun problème (par contre il ne faut pas ouvrir le serial moniteur de l'IDE Arduino à la fois).  
+
+Il ne manquait plus qu'à envoyer du texte. Mais prochain problème, l'arduino se reset chaque fois que j'envoie des informations. Ceci se produit parceque l'ordinateur, avant d'envoyer les bytes, envoie un signal LOW. L'arduino comprends ça comme une instruction pour reset.  
+La solution : ajouter un condensateur entre le 5V et le Reset de l'arduino. Ceci permet évite que l'arduino reset quand on envoie de l'information. Mais il faut enlever le condensateur pour téléverser le code.  
+
+
 
 
 
