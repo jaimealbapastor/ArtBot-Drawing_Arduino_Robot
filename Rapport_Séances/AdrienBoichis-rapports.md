@@ -129,10 +129,16 @@ Et pour finir je me suis penché sur la partir du code du mouvement en x et en y
 
 
 
-## Rapport de la séance 8
+## Rapport de la séance 8 (02/03/2022)
 ### Ce rapport correspond au travail fourni pendant la huitième scéance de TD.
 
+Dernière séance de TD avant la présentation de fin de projet. Tout est passé très vite comme prévu ! Lors de cette séance j'ai pu fixer tous nos problèmes sur la partie mécanique pour que tout fonctionne au mieux possible. J'ai ainsi pu ajouter deux couches de bois sur les pièces en y. Cela permet ainsi au cable d'être à la même hauteur sur tout son trajet et aainsi cela permet de reduire au maximum les frotements du cable et que le mouvement de la pièce demande au moins de puissance possible du moteur. 
 
+![8.1](../More/Images/8.1.jpg)
+
+![8.2](../More/Images/8.2.jpg)
+
+J'ai ensuite pu commencer le diaporama de notre présentation projet et notre rapport. 
 
 ## Rapport de la séance 9
 ### Ce rapport correspond au travail fourni pendant la neuvième scéance de TD.
