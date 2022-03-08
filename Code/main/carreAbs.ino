@@ -145,6 +145,6 @@ void loop()
         servo.write(DOWN);
         moveAbs(xCarre[counter], yCarre[counter]);
         servo.write(UP);
-        delay(500)
+        delay(500);
     }
 }
